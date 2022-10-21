@@ -1,10 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class OfferingList extends ArrayList {
 
 	private OfferingIterator offeringIterator;
+	private List<Offering> offeringList;
 
-	private Trading trading;
+	public OfferingList() {
+		offeringList = new ArrayList<>();
+	}
+	protected Trading trading;
 
-	private Offering[] offering;
-
+	public ListIterator createIterator() {
+		return new OfferingIterator(this.offeringList);
+	}
 }

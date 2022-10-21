@@ -1,10 +1,11 @@
 
 public abstract class Person {
 
+	protected ProductMenu theProductMenu;
+	//TODO: make theProductMenu private and add a Getter method.
+	protected Person(){
 
-	private ProductMenu theProductMenu;
-
-
+	}
 	public abstract void showMenu();
 
 
@@ -17,7 +18,6 @@ public abstract class Person {
 
 	}
 
-
 	public void showRadioButton() {
 
 	}
@@ -26,7 +26,6 @@ public abstract class Person {
 	public void showLabels() {
 
 	}
-
 
 	public abstract ProductMenu CreateProductMenu();
 
